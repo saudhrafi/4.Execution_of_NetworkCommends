@@ -1,0 +1,365 @@
+Microsoft Windows [Version 10.0.26200.8246]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Saudh Rafi>color c
+
+C:\Users\Saudh Rafi>help color
+Sets the default console foreground and background colors.
+
+COLOR [attr]
+
+  attr        Specifies color attribute of console output
+
+Color attributes are specified by TWO hex digits -- the first
+corresponds to the background; the second the foreground.  Each digit
+can be any of the following values:
+
+    0 = Black       8 = Gray
+    1 = Blue        9 = Light Blue
+    2 = Green       A = Light Green
+    3 = Aqua        B = Light Aqua
+    4 = Red         C = Light Red
+    5 = Purple      D = Light Purple
+    6 = Yellow      E = Light Yellow
+    7 = White       F = Bright White
+
+If no argument is given, this command restores the color to what it was
+when CMD.EXE started.  This value either comes from the current console
+window, the /T command line switch or from the DefaultColor registry
+value.
+
+The COLOR command sets ERRORLEVEL to 1 if an attempt is made to execute
+the COLOR command with a foreground and background color that are the
+same.
+
+Example: "COLOR fc" produces light red on bright white
+
+C:\Users\Saudh Rafi>color B
+
+C:\Users\Saudh Rafi>ipconfig
+
+Windows IP Configuration
+
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::e0cb:47d6:53c8:9a78%14
+   IPv4 Address. . . . . . . . . . . : 192.168.1.32
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.1.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+C:\Users\Saudh Rafi>nslookup
+Default Server:  UnKnown
+Address:  fe80::1
+
+> www.google.com
+Server:  UnKnown
+Address:  fe80::1
+
+DNS request timed out.
+    timeout was 2 seconds.
+Name:    www.google.com
+Addresses:  2001:4860:482a:7700::
+          2001:4860:482b:7700::
+          2001:4860:4828:7700::
+          2001:4860:4826:7700::
+          2001:4860:4829:7700::
+          2001:4860:4827:7700::
+          2001:4860:482c:7700::
+          2001:4860:482d:7700::
+
+>
+C:\Users\Saudh Rafi>ping 192.169.217.12
+
+Pinging 192.169.217.12 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 192.169.217.12:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\Users\Saudh Rafi>tracert  2001:4860:482a:7700::
+
+Tracing route to 2001:4860:482a:7700:: over a maximum of 30 hops
+
+  1  Transmit error: code 1231.
+
+Trace complete.
+
+C:\Users\Saudh Rafi>          2001:4860:482b:7700::
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Saudh Rafi>          2001:4860:4828:7700::
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Saudh Rafi>          2001:4860:4826:7700::
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Saudh Rafi>          2001:4860:4829:7700::
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Saudh Rafi>          2001:4860:4827:7700::
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Saudh Rafi>          2001:4860:482c:7700::
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Saudh Rafi>          2001:4860:482d:7700::
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Saudh Rafi>netstat -a
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    0.0.0.0:135            Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:445            Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:1309           Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:5040           Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:12177          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49664          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49665          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49666          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49667          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49668          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49677          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49678          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49679          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49680          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49685          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49689          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49690          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49691          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49692          Saudhrafi:0            LISTENING
+  TCP    0.0.0.0:49695          Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:1042         Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:1042         Saudhrafi:52926        ESTABLISHED
+  TCP    127.0.0.1:1042         Saudhrafi:52927        ESTABLISHED
+  TCP    127.0.0.1:1043         Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:7778         Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:9012         Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:9012         Saudhrafi:52466        ESTABLISHED
+  TCP    127.0.0.1:9013         Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:9014         Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:13030        Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:13030        Saudhrafi:49670        ESTABLISHED
+  TCP    127.0.0.1:13031        Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:13032        Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:22112        Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:24830        Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:27339        Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:49670        Saudhrafi:13030        ESTABLISHED
+  TCP    127.0.0.1:49687        Saudhrafi:49688        ESTABLISHED
+  TCP    127.0.0.1:49688        Saudhrafi:49687        ESTABLISHED
+  TCP    127.0.0.1:49693        Saudhrafi:49694        ESTABLISHED
+  TCP    127.0.0.1:49694        Saudhrafi:49693        ESTABLISHED
+  TCP    127.0.0.1:50100        Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:50100        Saudhrafi:52465        ESTABLISHED
+  TCP    127.0.0.1:50923        Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:51100        Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:52465        Saudhrafi:50100        ESTABLISHED
+  TCP    127.0.0.1:52466        Saudhrafi:9012         ESTABLISHED
+  TCP    127.0.0.1:52926        Saudhrafi:1042         ESTABLISHED
+  TCP    127.0.0.1:52927        Saudhrafi:1042         ESTABLISHED
+  TCP    127.0.0.1:52933        Saudhrafi:0            LISTENING
+  TCP    127.0.0.1:55959        Saudhrafi:55960        ESTABLISHED
+  TCP    127.0.0.1:55960        Saudhrafi:55959        ESTABLISHED
+  TCP    127.0.0.1:65026        Saudhrafi:65027        ESTABLISHED
+  TCP    127.0.0.1:65027        Saudhrafi:65026        ESTABLISHED
+  TCP    192.168.1.32:139       Saudhrafi:0            LISTENING
+  TCP    192.168.1.32:49427     4.213.25.242:https     ESTABLISHED
+  TCP    192.168.1.32:49428     4.213.25.242:https     ESTABLISHED
+  TCP    192.168.1.32:49671     ec2-63-34-172-74:https  ESTABLISHED
+  TCP    192.168.1.32:49702     52.110.14.180:https    ESTABLISHED
+  TCP    192.168.1.32:49707     52.110.14.180:https    ESTABLISHED
+  TCP    192.168.1.32:49779     0:https                ESTABLISHED
+  TCP    192.168.1.32:51719     104.18.39.21:https     ESTABLISHED
+  TCP    192.168.1.32:52578     ec2-63-34-172-74:https  CLOSE_WAIT
+  TCP    192.168.1.32:55079     bom07s59-in-f8:https   TIME_WAIT
+  TCP    192.168.1.32:55547     ec2-13-228-149-126:https  ESTABLISHED
+  TCP    192.168.1.32:58103     ec2-63-34-172-74:https  ESTABLISHED
+  TCP    192.168.1.32:60068     ec2-34-253-163-93:https  ESTABLISHED
+^C
+C:\Users\Saudh Rafi>
+C:\Users\Saudh Rafi>
+C:\Users\Saudh Rafi>route -n
+
+Manipulates network routing tables.
+
+ROUTE [-f] [-p] [-4|-6] command [destination]
+                  [MASK netmask]  [gateway] [METRIC metric]  [IF interface]
+
+  -f           Clears the routing tables of all gateway entries.  If this is
+               used in conjunction with one of the commands, the tables are
+               cleared prior to running the command.
+
+  -p           When used with the ADD command, makes a route persistent across
+               boots of the system. By default, routes are not preserved
+               when the system is restarted. Ignored for all other commands,
+               which always affect the appropriate persistent routes.
+
+  -4           Force using IPv4.
+
+  -6           Force using IPv6.
+
+  command      One of these:
+                 PRINT     Prints  a route
+                 ADD       Adds    a route
+                 DELETE    Deletes a route
+                 CHANGE    Modifies an existing route
+  destination  Specifies the host.
+  MASK         Specifies that the next parameter is the 'netmask' value.
+  netmask      Specifies a subnet mask value for this route entry.
+               If not specified, it defaults to 255.255.255.255.
+  gateway      Specifies gateway.
+  interface    the interface number for the specified route.
+  METRIC       specifies the metric, ie. cost for the destination.
+
+All symbolic names used for destination are looked up in the network database
+file NETWORKS. The symbolic names for gateway are looked up in the host name
+database file HOSTS.
+
+If the command is PRINT or DELETE. Destination or gateway can be a wildcard,
+(wildcard is specified as a star '*'), or the gateway argument may be omitted.
+
+If Dest contains a * or ?, it is treated as a shell pattern, and only
+matching destination routes are printed. The '*' matches any string,
+and '?' matches any one char. Examples: 157.*.1, 157.*, 127.*, *224*.
+
+Pattern match is only allowed in PRINT command.
+Diagnostic Notes:
+    Invalid MASK generates an error, that is when (DEST & MASK) != DEST.
+    Example> route ADD 157.0.0.0 MASK 155.0.0.0 157.55.80.1 IF 1
+             The route addition failed: The specified mask parameter is invalid. (Destination & Mask) != Destination.
+
+Examples:
+
+    > route PRINT
+    > route PRINT -4
+    > route PRINT -6
+    > route PRINT 157*          .... Only prints those matching 157*
+
+    > route ADD 157.0.0.0 MASK 255.0.0.0  157.55.80.1 METRIC 3 IF 2
+             destination^      ^mask      ^gateway     metric^    ^
+                                                         Interface^
+      If IF is not given, it tries to find the best interface for a given
+      gateway.
+    > route ADD 3ffe::/32 3ffe::1
+
+    > route CHANGE 157.0.0.0 MASK 255.0.0.0 157.55.80.5 METRIC 2 IF 2
+
+      CHANGE is used to modify gateway and/or metric only.
+
+    > route DELETE 157.0.0.0
+    > route DELETE 3ffe::/32
+
+C:\Users\Saudh Rafi>arp -a
+
+Interface: 192.168.1.32 --- 0xe
+  Internet Address      Physical Address      Type
+  192.168.1.1           18-45-93-64-16-b0     dynamic
+  224.0.0.2             01-00-5e-00-00-02     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+C:\Users\Saudh Rafi>tcpdump -i
+'tcpdump' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Saudh Rafi>getmac
+
+Physical Address    Transport Name
+=================== ==========================================================
+98-BD-80-56-17-92   \Device\Tcpip_{9233CC2A-D752-431B-93DA-924800283795}
+60-CF-84-D4-30-A7   Media disconnected
+98-BD-80-56-17-96   Media disconnected
+
+C:\Users\Saudh Rafi>hostname
+Saudhrafi
+
+C:\Users\Saudh Rafi>pathping
+
+Usage: pathping [-g host-list] [-h maximum_hops] [-i address] [-n]
+                [-p period] [-q num_queries] [-w timeout]
+                [-4] [-6] target_name
+
+Options:
+    -g host-list     Loose source route along host-list.
+    -h maximum_hops  Maximum number of hops to search for target.
+    -i address       Use the specified source address.
+    -n               Do not resolve addresses to hostnames.
+    -p period        Wait period milliseconds between pings.
+    -q num_queries   Number of queries per hop.
+    -w timeout       Wait timeout milliseconds for each reply.
+    -4               Force using IPv4.
+    -6               Force using IPv6.
+
+C:\Users\Saudh Rafi>netstat -b
+The requested operation requires elevation.
+
+C:\Users\Saudh Rafi>ssh
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
+           [-c cipher_spec] [-D [bind_address:]port] [-E log_file]
+           [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file]
+           [-J destination] [-L address] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-P tag] [-p port] [-Q query_option]
+           [-R address] [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+           destination [command [argument ...]]
+
+
+
+C:\Users\Saudh Rafi>nslookup www.youtube.com
+Server:  UnKnown
+Address:  fe80::1
+
+Non-authoritative answer:
+Name:    youtube-ui.l.google.com
+Addresses:  2404:6800:4009:808::200e
+          2404:6800:4009:80a::200e
+          2404:6800:4009:810::200e
+          2404:6800:4009:80b::200e
+          142.251.42.238
+          142.251.220.14
+          142.251.222.110
+          142.251.220.46
+          142.250.207.142
+          142.251.220.78
+          142.250.67.238
+          172.217.174.78
+          142.250.77.46
+          142.250.77.78
+          142.250.207.174
+          142.251.43.14
+          142.251.221.238
+          142.251.222.78
+          172.217.174.238
+          216.58.203.14
+Aliases:  www.youtube.com
+
+
+C:\Users\Saudh Rafi>
